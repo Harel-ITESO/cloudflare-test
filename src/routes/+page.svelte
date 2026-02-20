@@ -1,10 +1,11 @@
 <script lang="ts">
 	let counter = $state(0);
+	let doubleCounter = $derived(counter * 2);
 </script>
 
-<div class="p-5">
-	<button
-		class="cursor-pointer rounded-2xl bg-red-500 px-1 py-2 text-white transition-colors hover:bg-red-400"
-		onclick={() => counter++}>Counter: {counter}</button
-	>
-</div>
+<button
+	onclick={() => counter++}
+	class="p-2 text-white bg-red-500 hover:bg-red-600 transition-colors rounded-xl cursor-pointer"
+	>Counter: {counter}</button
+>
+<p class="font-bold">Double counter: {doubleCounter}</p>

@@ -15,7 +15,7 @@ To recreate this project with the same configuration:
 
 ```sh
 # recreate this project
-pnpm dlx sv create --template minimal --types ts --add tailwindcss="plugins:none" eslint prettier --install pnpm cloudflare-test
+pnpm dlx sv create --template minimal --types ts --add prettier eslint --install pnpm cloudflare-test
 ```
 
 ## Developing
